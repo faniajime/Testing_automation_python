@@ -6,9 +6,9 @@ from selenium.webdriver.common.by import By
 
 class TestRegisterAccount(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.Chrome()
 
-    def test_search_in_python_org(self):
+    def test_register_account(self):
         driver = self.driver
         driver.get("https://magento.softwaretestingboard.com/customer/account/create/")
         firstnameInput = driver.find_element(By.NAME, "firstname")
