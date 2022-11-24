@@ -8,7 +8,7 @@ class TestFilterOptions(unittest.TestCase):
 	def setUp(self):
 		self.driver = webdriver.Chrome()
 
-	def test_non_existent_item_search(self):
+	def test_buy_t_shirt(self):
 		driver = self.driver
 		self.driver.get("https://magento.softwaretestingboard.com/")
 		self.driver.set_window_size(972, 815)
